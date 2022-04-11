@@ -1,7 +1,6 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
-import { Head } from "next/Head";
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Flex
