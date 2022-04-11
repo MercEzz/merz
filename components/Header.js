@@ -90,7 +90,7 @@ const Header = () => {
           </MotionNav>
           <Spacer />
           <Box display={{ base: "none", md: "flex" }} p={2} color="black">
-            b.{/* <ToggleTheme /> */}
+            <ToggleTheme />
           </Box>
           {/* </Flex> */}
         </Flex>
