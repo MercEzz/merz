@@ -18,23 +18,19 @@ const vari = {
 const MainTitle = () => {
   return (
     <>
-      <MotionConfig transition={{ duration: 0.5, type: "just" }}>
-        <MotionBox
-          variants={variants}
-          initial="hidden"
-          animate="enter"
-          exit="exit"
-        >
-          <Heading p="2" as="h1" fontSize="6xl">
-            Mitesh Virash
-          </Heading>
-        </MotionBox>
-        <MotionBox variants={vari} initial="hidden" animate="enter" exit="exit">
-          <Text fontSize="md">
-            You are worth than second thoughts and maybes
-          </Text>
-        </MotionBox>
-      </MotionConfig>
+      <MotionBox
+        variants={variants}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+      >
+        <Heading p="2" as="h1" fontSize="6xl">
+          Mitesh Virash
+        </Heading>
+      </MotionBox>
+      <MotionBox variants={vari} initial="hidden" animate="enter" exit="exit">
+        <Text fontSize="md">You are worth than second thoughts and maybes</Text>
+      </MotionBox>
     </>
   );
 };

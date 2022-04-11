@@ -20,7 +20,7 @@ const LeftSideBar = () => {
         transform: "rotate(180deg)",
       }}
       fontSize="lg"
-      // zIndex="10"
+      zIndex="10"
     >
       <NextLink href="/projects">PROJECTS</NextLink>
     </Box>
