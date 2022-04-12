@@ -68,6 +68,9 @@ const Header = () => {
                   <NextLink href="/about" passHref>
                     <MenuItem as={Link}>About</MenuItem>
                   </NextLink>
+                  <NextLink href="/projects" passHref>
+                    <MenuItem as={Link}>Projects</MenuItem>
+                  </NextLink>
                   <NextLink href="/contact" passHref>
                     <MenuItem as={Link}>Contact</MenuItem>
                   </NextLink>
