@@ -1,4 +1,12 @@
-import { Text, Box, chakra, Avatar, Heading, Divider } from "@chakra-ui/react";
+import {
+  Text,
+  Box,
+  chakra,
+  Avatar,
+  Heading,
+  Divider,
+  useColorModeValue,
+} from "@chakra-ui/react";
 // import { motion } from "framer-motion";
 // import Image from "next/image";
 import "../public/images/merz.jpg";
@@ -7,7 +15,11 @@ import "../public/images/merz.jpg";
 
 const Bio = () => {
   return (
-    <Box p="2" bg="rgba(7,7,8,0.9)" borderRadius="5px">
+    <Box
+      p="2"
+      bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+      borderRadius="5px"
+    >
       <Heading textAlign="left" p="4" fontSize="lg">
         Personal Details
       </Heading>

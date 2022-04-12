@@ -21,8 +21,7 @@ const AboutMe = () => {
         transition={{ duration: 0.5, type: "just" }}
         textAlign={"center"}
         w="93vw"
-        mt={{ base: "2rem", md: "4rem" }}
-        color="white"
+        mt={"4rem"}
         zIndex="15"
         h="80vh"
       >

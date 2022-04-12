@@ -10,14 +10,13 @@ const RightSideBar = () => {
       h="100%"
       right="0"
       p={2}
-      // bg={useColorModeValue("#fffbcf", "rgb(7,7,8, 0.8)")}
-      bg="rgb(7,7,8, 0.8)"
-      color="white"
+      bg={useColorModeValue("rgba(255,225,253)", "rgba(7,7,8, 0.4)")}
       display="flex"
       alignItems="center"
       justifyContent="center"
       css={{
         writingMode: "vertical-lr",
+        backdropFilter: "blur(10px)",
       }}
       fontSize="xl"
       zIndex="10"

@@ -29,7 +29,9 @@ const MainTitle = () => {
         </Heading>
       </MotionBox>
       <MotionBox variants={vari} initial="hidden" animate="enter" exit="exit">
-        <Text fontSize="md">You are worth than second thoughts and maybes</Text>
+        <Text fontSize="xl" fontWeight="bold">
+          You are worth than second thoughts and maybes
+        </Text>
       </MotionBox>
     </>
   );

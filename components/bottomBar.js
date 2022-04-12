@@ -18,9 +18,8 @@ const BottomBar = () => {
       as="nav"
       bottom="0"
       w="100%"
-      // bg={useColorModeValue("#fffbcf", "rgb(7,7,8, 0.8)")}
-      bg="rgb(7,7,8, 0.8)"
-      color="white"
+      bg={useColorModeValue("rgba(255,225,253)", "rgba(7,7,8, 0.4)")}
+      css={{ backdropFilter: "blur(10px)" }}
       zIndex="10"
     >
       <Container maxH={"container.md"} p="2">

@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+
 import theme from "../theme/theme";
 import { MotionConfig } from "framer-motion";
 

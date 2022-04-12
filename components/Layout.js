@@ -10,14 +10,12 @@ const Layout = ({ children }) => {
         py="6"
         px="6"
         w="100%"
-        // bgColor={useColorModeValue("#0e0f10", "#f1ffd6")}
+        bgColor={useColorModeValue("#d8d8ff", "#0e0f10")}
         pos="fixed"
         alignItems="center"
         alignContent="center"
-        bgImage="/images/bggif.gif"
-        bgRepeat="no-repeat"
-        bgSize="cover"
-        zIndex="1"
+        color={useColorModeValue("#0e0f10", "#ffecff")}
+        zIndex="-1"
       >
         {children}
       </Flex>

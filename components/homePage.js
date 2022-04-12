@@ -5,7 +5,17 @@ import MainTitle from "./MainTitle";
 const HomePage = () => {
   return (
     <>
-      <Box>
+      <Box
+        w="100%"
+        h="100%"
+        bgImage={useColorModeValue(
+          "/images/lightwall.jpg",
+          "/images/darkwall.jpg"
+        )}
+        bgPos="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+      >
         <Container
           display={"flex"}
           flexDir="row"
@@ -14,7 +24,6 @@ const HomePage = () => {
           justifyContent="center"
           mt="2rem"
           pt={{ base: "9rem", md: "12rem" }}
-          color="white"
         >
           <Box textAlign={"center"} p={2}>
             <MainTitle />

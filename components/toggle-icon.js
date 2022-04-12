@@ -2,6 +2,8 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 
+import { BsSunFill } from "react-icons/bs";
+
 const ToggleTheme = () => {
   const { toggleColorMode } = useColorMode();
 
@@ -17,8 +19,11 @@ const ToggleTheme = () => {
       >
         <IconButton
           aria-label="Toggle theme"
-          colorScheme={useColorModeValue("purple", "orange")}
-          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+          colorScheme={"white"}
+          icon={useColorModeValue(
+            <MoonIcon color="black" />,
+            <SunIcon color="white" />
+          )}
           onClick={toggleColorMode}
         ></IconButton>
       </motion.div>
