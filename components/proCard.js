@@ -21,7 +21,8 @@ const ProjectCard = () => {
           transition={{ duration: 0.2, type: "just" }}
           maxW={"450px"}
           w="full"
-          bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+          bg="rgba(255,225,253, 0.8)"
+          _dark={{ bg: "rgba(7,7,8, 0.8)" }}
           boxShadow={"xl"}
           rounded={"lg"}
           p={6}
