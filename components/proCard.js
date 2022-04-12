@@ -21,9 +21,8 @@ const ProjectCard = () => {
           transition={{ duration: 0.2, type: "just" }}
           maxW={"450px"}
           w="full"
-          // bgColor={useColorModeValue("white", "rgba(7,7,8,0.9)")}
-          bg="rgba(7,7,8,0.8)"
-          boxShadow={"2xl"}
+          bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+          boxShadow={"xl"}
           rounded={"lg"}
           p={6}
           m={2}
@@ -33,12 +32,7 @@ const ProjectCard = () => {
           <Box>{data.img}</Box>
           <Heading fontSize="2xl">{data.title}</Heading>
 
-          <Text
-            textAlign="center"
-            // color={useColorModeValue("gray.700", "gray.400")}
-            color="gray.400"
-            px={3}
-          >
+          <Text textAlign="center" px={3}>
             {data.desc}
           </Text>
           <Link>{data.ghlink}</Link>

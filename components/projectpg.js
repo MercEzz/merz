@@ -19,13 +19,13 @@ const Projectpg = () => {
         transition={{ duration: 0.5, type: "just" }}
         textAlign={"center"}
         w="full"
-        mt={{ base: "2rem", md: "4rem" }}
-        color="white"
+        mt={{ base: "5rem", md: "5rem" }}
+        overflowY="auto"
       >
         <Heading mb="5">Projects</Heading>
         <Container
           display={"flex"}
-          flexDir="row"
+          flexDir={{ base: "column", md: "column", lg: "row" }}
           maxW="container.md"
           p={5}
           justifyContent="center"

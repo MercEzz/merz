@@ -14,8 +14,7 @@ const Layout = ({ children }) => {
         pos="fixed"
         alignItems="center"
         alignContent="center"
-        color={useColorModeValue("#0e0f10", "#ffecff")}
-        zIndex="-1"
+        color={useColorModeValue("gray.700", "gray.200")}
       >
         {children}
       </Flex>

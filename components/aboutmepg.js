@@ -21,9 +21,9 @@ const AboutMe = () => {
         transition={{ duration: 0.5, type: "just" }}
         textAlign={"center"}
         w="93vw"
-        mt={"4rem"}
+        pt={"4rem"}
         zIndex="15"
-        h="80vh"
+        h="100%"
       >
         <Scrollbar
           style={{

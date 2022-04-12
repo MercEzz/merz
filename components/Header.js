@@ -101,6 +101,7 @@ const Header = () => {
             p={2}
             fontSize="3xl"
             whileHover={{ transform: "translateY(-3px)" }}
+            ml="-1.5rem"
           >
             <NextLink href="/">MerZ</NextLink>
           </MotionNav>

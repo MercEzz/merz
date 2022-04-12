@@ -1,13 +1,26 @@
-import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <Box p="2" mt="5" bg="rgba(7,7,8,0.9)" borderRadius="5px">
+    <Box
+      p="2"
+      mt="5"
+      bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+      borderRadius="5px"
+    >
       <Heading textAlign="left" p="4" fontSize="lg">
         Skills
       </Heading>
       <Divider />
-      <Flex p="2" m="2" flexDir="row">
+      <Flex p="2" m="2" flexDir={{ base: "column", md: "row" }}>
         <Box p="2">
           <Text textAlign="centerkl" fontWeight="bold">
             React.js
@@ -24,7 +37,7 @@ const Skills = () => {
             Next.js
           </Text>
           <Image
-            src="/images/next.png"
+            src={useColorModeValue("/images/next.png", "/images/whitenext.png")}
             borderRadius="lg"
             bgSize="cover"
             alt="next"
@@ -35,7 +48,6 @@ const Skills = () => {
             Node.js
           </Text>
           <Image
-            bg="black"
             src="/images/node.png"
             borderRadius="lg"
             bgSize="cover"
@@ -47,7 +59,10 @@ const Skills = () => {
             Redux
           </Text>
           <Image
-            src="/images/redux.jpg"
+            src={useColorModeValue(
+              "/images/redux.png",
+              "/images/whiteredux.png"
+            )}
             borderRadius="lg"
             bgSize="cover"
             alt="redux"
