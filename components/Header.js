@@ -42,7 +42,7 @@ const Header = () => {
         pos="fixed"
         as="nav"
         w="100%"
-        bg={useColorModeValue("rgba(255,225,253)", "rgba(7,7,8, 0.4)")}
+        bg={useColorModeValue("rgba(255,225,253, 0.7)", "rgba(7,7,8, 0.4)")}
         css={{ backdropFilter: "blur(10px)" }}
         zIndex="11"
       >
