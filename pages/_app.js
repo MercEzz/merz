@@ -7,17 +7,23 @@ import { MotionConfig } from "framer-motion";
 
 import "@fontsource/poppins/400.css";
 import "@fontsource/quicksand/400.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
-      <Header />
-      <MotionConfig transition={{ duration: 0.5, type: "just" }}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </MotionConfig>
-    </ChakraProvider>
+    <>
+      <Head>
+        <link rel="icon" href="/m.png" />
+      </Head>
+      <ChakraProvider theme={theme}>
+        <Header />
+        <MotionConfig transition={{ duration: 0.5, type: "just" }}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </MotionConfig>
+      </ChakraProvider>
+    </>
   );
 }
 

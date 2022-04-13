@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Scrollbar from "react-scrollbars-custom";
+import ContactDetails from "./contactDetails";
 import ContactForm from "./contactForm";
 
 const MotionBox = motion(Box);
@@ -38,7 +39,22 @@ const ContactPg = () => {
         <Heading textAlign="center" mb="2rem">
           Contact
         </Heading>
-        <ContactForm />
+        <Container
+          alignContent="center"
+          alignItems="center"
+          maxW="container.md"
+          p="2"
+          h="100%"
+        >
+          <Flex
+            alignItems="center"
+            alignContent="center"
+            direction={{ base: "column-reverse", md: "row" }}
+          >
+            <ContactForm />
+            <ContactDetails />
+          </Flex>
+        </Container>
       </Scrollbar>
     </MotionBox>
   );

@@ -12,10 +12,12 @@ import {
 
 const ContactForm = () => {
   return (
-    <Container
+    <Box
       p="5"
       bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
       borderRadius="5px"
+      w={{ base: "auto", md: "xl" }}
+      mt={{ base: "5", md: "0" }}
     >
       <FormControl>
         <Stack direction={"column"} spacing="5">
@@ -34,12 +36,12 @@ const ContactForm = () => {
           </Box>
           <Box>
             <FormLabel>Your Message</FormLabel>
-            <Textarea variant="flushed" />
+            <Textarea variant="flushed" placeholder="Your Message" />
           </Box>
           <Button variant="ghost">Submit</Button>
         </Stack>
       </FormControl>
-    </Container>
+    </Box>
   );
 };
 
