@@ -21,6 +21,7 @@ const Projectpg = () => {
         w="full"
         mt={{ base: "5rem", md: "5rem" }}
         overflowY="auto"
+        mb="5"
       >
         <Heading mb="5">Projects</Heading>
         <Container
