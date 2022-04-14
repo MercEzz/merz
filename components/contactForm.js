@@ -16,8 +16,10 @@ const ContactForm = () => {
       p="5"
       bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
       borderRadius="5px"
-      w={{ base: "auto", md: "xl" }}
+      w={{ base: "240px", md: "xl" }}
+      // maxW="450px"
       mt={{ base: "5", md: "0" }}
+      mb="8"
     >
       <FormControl>
         <Stack direction={"column"} spacing="5">

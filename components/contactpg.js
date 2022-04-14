@@ -34,28 +34,27 @@ const ContactPg = () => {
       animate="enter"
       alignItems="center"
       mt="4rem"
+      overflowY="auto"
     >
-      <Scrollbar>
-        <Heading textAlign="center" mb="2rem">
-          Contact
-        </Heading>
-        <Container
-          alignContent="center"
+      <Heading textAlign="center" mb="2rem">
+        Contact
+      </Heading>
+      <Container
+        alignContent="center"
+        alignItems="center"
+        maxW="container.md"
+        p="2"
+        h="100%"
+      >
+        <Flex
           alignItems="center"
-          maxW="container.md"
-          p="2"
-          h="100%"
+          alignContent="center"
+          direction={{ base: "column-reverse", md: "row" }}
         >
-          <Flex
-            alignItems="center"
-            alignContent="center"
-            direction={{ base: "column-reverse", md: "row" }}
-          >
-            <ContactForm />
-            <ContactDetails />
-          </Flex>
-        </Container>
-      </Scrollbar>
+          <ContactForm />
+          <ContactDetails />
+        </Flex>
+      </Container>
     </MotionBox>
   );
 };

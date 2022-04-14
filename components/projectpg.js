@@ -27,6 +27,7 @@ const Projectpg = () => {
           display={"flex"}
           flexDir={{ base: "column", md: "column", lg: "row" }}
           maxW="container.md"
+          alignItems="center"
           p={5}
           justifyContent="center"
         >

@@ -18,9 +18,9 @@ const ContactDetails = () => {
       borderRadius="5px"
       ml={{ base: "0", md: "5" }}
       flexDir="column"
-      mt={{ base: "5", md: "0" }}
+      mt={{ base: "5", md: "-7" }}
       w="auto"
-      h="25rem"
+      h="24.5rem"
     >
       <Text p="2">Contact Details</Text>
       <Divider />
