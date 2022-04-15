@@ -20,14 +20,16 @@ const Projectpg = () => {
         textAlign={"center"}
         w="full"
         mt={{ base: "5rem", md: "5rem" }}
-        overflowY="auto"
+        ml={{ base: "0", md: "3" }}
         mb="5"
+        overflow="auto"
       >
         <Heading mb="5">Projects</Heading>
         <Container
           display={"flex"}
           flexDir={{ base: "column", md: "column", lg: "row" }}
-          maxW="container.md"
+          maxW="container.xl"
+          maxH="container.xl"
           alignItems="center"
           p={5}
           justifyContent="center"

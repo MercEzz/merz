@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
         as="main"
         direction="column"
         h="100vh"
-        py="6"
-        px="6"
+        py="4"
+        px="4"
         w="100%"
         bgColor={useColorModeValue("#d8d8ff", "#0e0f10")}
         pos="fixed"

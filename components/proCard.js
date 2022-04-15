@@ -1,4 +1,17 @@
-import { Box, Text, useColorModeValue, Heading, Link } from "@chakra-ui/react";
+import { ArrowDownIcon } from "@chakra-ui/icons";
+import { useState } from "react";
+import {
+  Box,
+  Text,
+  useColorModeValue,
+  Image,
+  Heading,
+  Link,
+  Grid,
+  GridItem,
+  Flex,
+  Button,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 import proData from "./prodata";
@@ -6,32 +19,49 @@ import proData from "./prodata";
 const MotionBox = motion(Box);
 
 const ProjectCard = () => {
+  const [display, setDisplay] = useState(false);
+
+  const onToggle = () => {
+    setDisplay(!display);
+  };
+
   return (
     <>
-      {proData.map((data) => (
-        <MotionBox
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.2, type: "just" }}
-          maxW={"450px"}
-          w="full"
-          bg="rgba(255,225,253, 0.8)"
-          _dark={{ bg: "rgba(7,7,8, 0.8)" }}
-          boxShadow={"xl"}
-          rounded={"lg"}
-          p={6}
-          m={2}
-          textAlign={"center"}
-          key={data.title}
-        >
-          <Box>{data.img}</Box>
-          <Heading fontSize="2xl">{data.title}</Heading>
-
-          <Text textAlign="center" px={3}>
-            {data.desc}
-          </Text>
-          <Link>{data.ghlink}</Link>
-        </MotionBox>
-      ))}
+      <Grid
+        // h="300px"
+        w="full"
+        templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3,1fr)" }}
+        gap="4"
+      >
+        {proData.map((data) => (
+          <MotionBox
+            key={data.title}
+            whileHover={{ scale: 0.9 }}
+            transition={{ duration: 0.3, type: "just" }}
+          >
+            <GridItem
+              bg="rgba(255,225,253, 0.8)"
+              _dark={{ bg: "rgba(7,7,8, 0.8)" }}
+              width="full"
+              borderRadius="5px"
+              value={data.title}
+              // h={display ? "auto" : "500px"}
+            >
+              <Box>
+                <Image src={data.img} alt={data.title} />
+              </Box>
+              <Box w="100%" alignContent="center">
+                <Text p="1" fontSize="lg">
+                  {data.title}
+                </Text>
+                <Button w="100%" variant="ghost" onClick={onToggle}>
+                  <ArrowDownIcon />
+                </Button>
+              </Box>
+            </GridItem>
+          </MotionBox>
+        ))}
+      </Grid>
     </>
   );
 };
