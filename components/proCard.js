@@ -54,9 +54,6 @@ const ProjectCard = () => {
                 <Text p="1" fontSize="lg">
                   {data.title}
                 </Text>
-                <Button w="100%" variant="ghost" onClick={onToggle}>
-                  <ArrowDownIcon />
-                </Button>
               </Box>
             </GridItem>
           </MotionBox>
