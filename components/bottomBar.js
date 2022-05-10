@@ -18,7 +18,7 @@ const BottomBar = () => {
       as="nav"
       bottom="0"
       w="100%"
-      bg={useColorModeValue("rgba(255,225,253)", "rgba(7,7,8, 0.4)")}
+      bg={useColorModeValue("rgba(255,225,253, 0.4)", "rgba(7,7,8, 0.4)")}
       css={{ backdropFilter: "blur(10px)" }}
       zIndex="10"
     >

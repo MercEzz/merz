@@ -10,7 +10,7 @@ const RightSideBar = () => {
       h="100%"
       right="0"
       p={2}
-      bg={useColorModeValue("rgba(255,225,253)", "rgba(7,7,8, 0.4)")}
+      bg={useColorModeValue("rgba(255,225,253, 0.4)", "rgba(7,7,8, 0.4)")}
       display="flex"
       alignItems="center"
       justifyContent="center"
