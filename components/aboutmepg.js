@@ -1,10 +1,10 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Container, Flex, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Scrollbar } from "react-scrollbars-custom";
 import Bio from "./bio";
 import Skills from "./skills";
 
-const MotionBox = motion(Box);
+const MotionBox = motion(Flex);
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: -50 },
@@ -20,29 +20,31 @@ const AboutMe = () => {
         animate="enter"
         transition={{ duration: 0.5, type: "just" }}
         textAlign={"center"}
-        w="93vw"
-        pt={"4rem"}
+        // w="93vw"
+        m={"4rem"}
+        flexDir=''
         zIndex="15"
         h="100%"
+        overflow="auto"
       >
-        <Scrollbar
+        {/* <Scrollbar
           style={{
             width: "100%",
             height: "100%",
           }}
+        > */}
+        <Heading mb="5">About Me</Heading>
+        <Container
+          display={"flex"}
+          flexDir="column"
+          maxW="container.lg"
+          p={5}
+          justifyContent="center"
         >
-          <Heading mb="5">About Me</Heading>
-          <Container
-            display={"flex"}
-            flexDir="column"
-            maxW="container.lg"
-            p={5}
-            justifyContent="center"
-          >
-            <Bio />
-            <Skills />
-          </Container>
-        </Scrollbar>
+          <Bio />
+          <Skills />
+        </Container>
+        {/* </Scrollbar> */}
       </MotionBox>
     </>
   );

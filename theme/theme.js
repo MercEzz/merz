@@ -4,7 +4,6 @@ const theme = extendTheme({
   fonts: {
     heading: "Poppins",
     body: "Quicksand",
-    // fontFamily: "Poppins",
   },
 });
 

@@ -22,7 +22,7 @@ const HomePage = () => {
           maxW="container.md"
           p={2}
           justifyContent="center"
-          mt="5rem"
+          mt="2rem"
           pt={{ base: "9rem", md: "12rem" }}
         >
           <Box textAlign={"center"} p={2}>
