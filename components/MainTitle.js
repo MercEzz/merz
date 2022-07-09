@@ -1,5 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 
 const MotionBox = motion(Box);
 
@@ -24,12 +24,12 @@ const MainTitle = () => {
         animate="enter"
         exit="exit"
       >
-        <Heading p="2" as="h1" fontSize="6xl">
+        <Heading as="h1" color="white" fontSize="5xl">
           Mitesh Virash
         </Heading>
       </MotionBox>
       <MotionBox variants={vari} initial="hidden" animate="enter" exit="exit">
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontWeight="bold">
           You are worth more than second thoughts and maybes
         </Text>
       </MotionBox>

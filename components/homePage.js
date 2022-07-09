@@ -1,35 +1,22 @@
-import { Container, Box, useColorModeValue } from "@chakra-ui/react";
+import { Container, Box, useColorModeValue, Flex } from "@chakra-ui/react";
 
 import MainTitle from "./MainTitle";
 
 const HomePage = () => {
   return (
     <>
-      <Box
+      <Flex
         w="100%"
-        h="100%"
-        bgImage={useColorModeValue(
-          "/images/lightwall.jpg",
-          "/images/darkwall.jpg"
-        )}
-        bgPos="center"
-        bgRepeat="no-repeat"
-        bgSize="cover"
+        h="100vh"
+        // bgImage={useColorModeValue("/images/lightwall.jpg", "/images/wall.jpg")}
+        // bgPos="center"
+        // bgRepeat="no-repeat"
+        // bgSize="cover"
+        align="center"
+        justify="center"
       >
-        <Container
-          display={"flex"}
-          flexDir="row"
-          maxW="container.md"
-          p={2}
-          justifyContent="center"
-          mt="2rem"
-          pt={{ base: "9rem", md: "12rem" }}
-        >
-          <Box textAlign={"center"} p={2}>
-            <MainTitle />
-          </Box>
-        </Container>
-      </Box>
+        <MainTitle />
+      </Flex>
     </>
   );
 };

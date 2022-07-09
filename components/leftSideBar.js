@@ -7,11 +7,11 @@ const LeftSideBar = () => {
     <Box
       as="nav"
       pos="fixed"
+      left="0"
       h="100%"
       p={2}
       bg={useColorModeValue("rgba(255,225,253,0.4)", "rgba(7,7,8, 0.4)")}
       display="flex"
-      alignItems="center"
       justifyContent="center"
       css={{
         writingMode: "vertical-lr",

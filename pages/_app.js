@@ -1,12 +1,10 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../components/Layout";
-import Header from "../components/Header";
 
 import theme from "../theme/theme";
-import { MotionConfig } from "framer-motion";
 
-import "@fontsource/poppins/400.css";
-import "@fontsource/quicksand/400.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/quicksand/300.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
@@ -16,12 +14,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/m.png" />
       </Head>
       <ChakraProvider theme={theme}>
-        <Header />
-        <MotionConfig transition={{ duration: 0.5, type: "just" }}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </MotionConfig>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ChakraProvider>
     </>
   );

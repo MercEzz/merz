@@ -22,20 +22,12 @@ import BottomBar from "./bottomBar";
 import LeftSideBar from "./leftSideBar";
 import RightSideBar from "./rightSideBar";
 import ToggleTheme from "./toggle-icon";
-import { motion } from "framer-motion";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-const MotionNav = motion(Box);
-
 const Header = () => {
-  const variants = {
-    hidden: { opacity: 0, x: 0, y: -500 },
-    enter: { opacity: 1, x: 0, y: 0 },
-  };
-
   return (
     <>
       <Box
@@ -81,15 +73,15 @@ const Header = () => {
               </Menu>
             </Box>
             <Spacer />
-            <MotionNav
+            <Box
               p={2}
               fontSize="3xl"
               whileHover={{ transform: "translateY(-3px)" }}
             >
               <NextLink href="/">MerZ</NextLink>
-            </MotionNav>
+            </Box>
           </Box>
-          <MotionNav
+          <Box
             display={{ base: "none", md: "flex" }}
             p={2}
             mt="2"
@@ -97,9 +89,9 @@ const Header = () => {
             whileHover={{ transform: "translateY(-3px)" }}
           >
             <NextLink href="/about">ABOUT</NextLink>
-          </MotionNav>
+          </Box>
           <Spacer />
-          <MotionNav
+          <Box
             display={{ base: "none", md: "flex" }}
             p={2}
             fontSize="3xl"
@@ -107,7 +99,7 @@ const Header = () => {
             ml="-1.5rem"
           >
             <NextLink href="/">MerZ</NextLink>
-          </MotionNav>
+          </Box>
           <Spacer />
 
           <Box display={{ base: "none", md: "flex" }} p={2}>

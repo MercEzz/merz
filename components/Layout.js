@@ -1,4 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
@@ -7,15 +8,16 @@ const Layout = ({ children }) => {
         as="main"
         direction="column"
         h="100vh"
-        py="4"
-        px="4"
         w="100%"
-        bgColor={useColorModeValue("#d8d8ff", "#0e0f10")}
-        pos="fixed"
+        bgImage={useColorModeValue("/images/lightwall.jpg", "/images/wall.jpg")}
+        bgPos="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
         alignItems="center"
         alignContent="center"
-        color={useColorModeValue("gray.700", "gray.200")}
+        color={useColorModeValue("black", "white")}
       >
+        <Header />
         {children}
       </Flex>
     </>
