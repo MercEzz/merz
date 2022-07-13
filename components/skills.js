@@ -14,7 +14,7 @@ const Skills = () => {
     <Box
       p="2"
       mt="5"
-      bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+      bg={useColorModeValue("rgba(255,225,253, 0.4)", "rgba(7,7,8, 0.8)")}
       borderRadius="5px"
     >
       <Heading textAlign="left" p="4" fontSize="lg">

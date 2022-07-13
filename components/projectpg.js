@@ -12,22 +12,26 @@ const variants = {
 
 const Projectpg = () => {
   return (
-    <>
-      <MotionBox
-        variants={variants}
-        initial="hidden"
-        animate="enter"
-        transition={{ duration: 0.7, type: "just" }}
-        w="100%"
-        h="100%"
-        css={{
-          backdropFilter: "blur(15px)",
-        }}
-        pt={{ base: "5rem", md: "3rem" }}
-        pb={{ base: "2rem", md: "2rem" }}
-        overflow="auto"
-      >
-        <Scrollbar style={{ width: "100%", height: "100%" }}>
+    <Flex
+      w="100%"
+      h="100%"
+      css={{
+        backdropFilter: "blur(15px)",
+      }}
+      px={{ base: "1rem", md: "3rem" }}
+      pt={{ base: "5rem", md: "3rem" }}
+      pb={{ base: "2rem", md: "2rem" }}
+      overflow="auto"
+    >
+      <Scrollbar style={{ width: "100%", height: "100%" }}>
+        <MotionBox
+          flexDir="column"
+          variants={variants}
+          initial="hidden"
+          animate="enter"
+          transition={{ duration: 0.5, type: "just" }}
+          px={{ base: "0", md: "10rem" }}
+        >
           <Heading
             textAlign={{ base: "left", md: "center" }}
             mt="1rem"
@@ -37,15 +41,16 @@ const Projectpg = () => {
           </Heading>
           <Flex
             flexDir={{ base: "column", md: "column", lg: "row" }}
-            alignItems="center"
-            px={{ base: "1rem", md: "10rem" }}
+            w="100%"
+            h="100%"
+            p={5}
             justifyContent="center"
           >
             <ProjectCard />
           </Flex>
-        </Scrollbar>
-      </MotionBox>
-    </>
+        </MotionBox>
+      </Scrollbar>
+    </Flex>
   );
 };
 

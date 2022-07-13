@@ -25,33 +25,41 @@ const ContactPg = () => {
   };
 
   return (
-    <MotionBox
+    <Flex
+      align="center"
       w="100%"
       h="100%"
-      variants={variants}
-      transition={{ duration: 0.7, type: "just" }}
-      initial="hidden"
-      animate="enter"
-      alignItems="center"
+      px={{ base: "1rem", md: "3rem" }}
+      pt={{ base: "5rem", md: "3rem" }}
+      pb={{ base: "2rem", md: "2rem" }}
+      overflow="auto"
       css={{
         backdropFilter: "blur(15px)",
       }}
-      px="3rem"
-      py="5rem"
-      overflow="auto"
     >
-      <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
-        Contact
-      </Heading>
-      <Flex
-        justify="center"
-        flexDir={{ base: "column-reverse", md: "row" }}
+      <MotionBox
+        flexDir="column"
+        variants={variants}
+        initial="hidden"
+        animate="enter"
+        transition={{ duration: 0.5, type: "just" }}
         px={{ base: "0", md: "10rem" }}
+        w="100%"
       >
-        <ContactForm />
-        <ContactDetails />
-      </Flex>
-    </MotionBox>
+        <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
+          Contact
+        </Heading>
+        <Flex
+          flexDir={{ base: "column-reverse", md: "row" }}
+          w="100%"
+          p={5}
+          justifyContent="center"
+        >
+          <ContactForm />
+          <ContactDetails />
+        </Flex>
+      </MotionBox>
+    </Flex>
   );
 };
 

@@ -16,7 +16,7 @@ const AboutMe = () => {
     <Flex
       w="100%"
       h="100%"
-      px="3rem"
+      px={{ base: "1rem", md: "3rem" }}
       pt={{ base: "5rem", md: "3rem" }}
       pb={{ base: "2rem", md: "2rem" }}
       overflow="auto"
