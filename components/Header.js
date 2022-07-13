@@ -33,7 +33,7 @@ const Header = () => {
         bg={useColorModeValue("rgba(255,225,253, 0.7)", "rgba(7,7,8, 0.7)")}
         zIndex="11"
       >
-        {/* <Box display={{ base: "flex", md: "none" }} w="100%" p="2">
+        <Box display={{ base: "flex", md: "none" }} w="100%" p="2">
           <Box m="3">
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -74,7 +74,7 @@ const Header = () => {
           >
             <NextLink href="/">MerZ</NextLink>
           </Box>
-        </Box> */}
+        </Box>
         <Flex
           display={{ base: "none", md: "flex" }}
           p="2"
@@ -95,8 +95,8 @@ const Header = () => {
         </Box>
       </Flex>
       <Box display={{ base: "none", md: "flex" }}>
-        {/* <LeftSideBar />
-        <RightSideBar /> */}
+        <LeftSideBar />
+        <RightSideBar />
       </Box>
       <BottomBar />
     </>
