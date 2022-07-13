@@ -17,7 +17,8 @@ const AboutMe = () => {
       w="100%"
       h="100%"
       px="3rem"
-      py="5rem"
+      pt={{ base: "5rem", md: "3rem" }}
+      pb={{ base: "2rem", md: "2rem" }}
       overflow="auto"
       css={{
         backdropFilter: "blur(15px)",
@@ -30,8 +31,13 @@ const AboutMe = () => {
           initial="hidden"
           animate="enter"
           transition={{ duration: 0.5, type: "just" }}
+          px={{ base: "0", md: "10rem" }}
         >
-          <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
+          <Heading
+            textAlign={{ base: "left", md: "center" }}
+            mt="1rem"
+            mb="2rem"
+          >
             About Me
           </Heading>
           <Flex

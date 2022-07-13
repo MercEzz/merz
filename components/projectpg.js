@@ -23,16 +23,19 @@ const Projectpg = () => {
         css={{
           backdropFilter: "blur(15px)",
         }}
-        px="3rem"
-        py="5rem"
+        pt={{ base: "5rem", md: "3rem" }}
+        pb={{ base: "2rem", md: "2rem" }}
         overflow="auto"
       >
         <Scrollbar style={{ width: "100%", height: "100%" }}>
-          <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
+          <Heading
+            textAlign={{ base: "left", md: "center" }}
+            mt="1rem"
+            mb="2rem"
+          >
             Projects
           </Heading>
           <Flex
-            display={"flex"}
             flexDir={{ base: "column", md: "column", lg: "row" }}
             alignItems="center"
             px={{ base: "1rem", md: "10rem" }}

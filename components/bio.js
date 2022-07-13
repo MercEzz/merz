@@ -16,11 +16,10 @@ import "../public/images/merz.jpg";
 const Bio = () => {
   return (
     <Flex
-      p="2"
       w="100%"
       flexDir="column"
-      bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
-      // borderRadius="5px"
+      p="5"
+      bg={useColorModeValue("rgba(255,225,253, 0.4)", "rgba(7,7,8, 0.8)")}
     >
       <Heading textAlign="left" p="4" fontSize="lg">
         Personal Details

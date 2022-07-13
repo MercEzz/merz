@@ -5,6 +5,7 @@ import {
   Image,
   Grid,
   GridItem,
+  Flex,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -24,23 +25,19 @@ const ProjectCard = () => {
           <MotionBox
             key={data.title}
             whileHover={{ scale: 0.9 }}
-            transition={{ duration: 0.3, type: "just" }}
+            transition={{ duration: 0.3, type: "easeIn" }}
           >
             <GridItem
-              bg="rgba(255,225,253, 0.8)"
+              bg="rgba(255,225,253, 0.4)"
               _dark={{ bg: "rgba(7,7,8, 0.8)" }}
               width="100%"
               value={data.title}
-              // h={display ? "auto" : "500px"}
+              p="6"
             >
-              <Box>
-                <Image src={data.img} alt={data.title} />
-              </Box>
-              <Box w="100%" alignContent="center">
-                <Text p="1" fontSize="lg">
-                  {data.title}
-                </Text>
-              </Box>
+              <Image src={data.img} alt={data.title} />
+              <Flex w="100%">
+                <Text p="2">{data.title}</Text>
+              </Flex>
             </GridItem>
           </MotionBox>
         ))}
