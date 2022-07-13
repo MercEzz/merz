@@ -30,11 +30,14 @@ const Header = () => {
         w="100%"
         align="center"
         justify="space-between"
-        bg={useColorModeValue("rgba(255,225,253, 0.7)", "rgba(7,7,8, 0.7)")}
+        bg={useColorModeValue("rgba(255,225,253, 0.4)", "rgba(7,7,8, 0.4)")}
+        css={{
+          backdropFilter: "blur(10px)",
+        }}
         zIndex="11"
       >
         <Box display={{ base: "flex", md: "none" }} w="100%" p="2">
-          <Box m="3">
+          <Box>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}

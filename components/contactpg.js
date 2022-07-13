@@ -33,28 +33,16 @@ const ContactPg = () => {
       initial="hidden"
       animate="enter"
       alignItems="center"
-      mt="4rem"
-      overflowY="auto"
+      py="4rem"
+      overflow="auto"
     >
       <Heading textAlign="center" mb="2rem">
         Contact
       </Heading>
-      <Container
-        alignContent="center"
-        alignItems="center"
-        maxW="container.md"
-        p="2"
-        h="100%"
-      >
-        <Flex
-          alignItems="center"
-          alignContent="center"
-          direction={{ base: "column-reverse", md: "row" }}
-        >
-          <ContactForm />
-          <ContactDetails />
-        </Flex>
-      </Container>
+      <Flex justify="center" align="center" w="100%" p="2" h="100%">
+        <ContactForm />
+        <ContactDetails />
+      </Flex>
     </MotionBox>
   );
 };

@@ -30,7 +30,7 @@ const ProjectCard = () => {
       <Grid
         // h="300px"
         w="full"
-        templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3,1fr)" }}
+        templateColumns={{ base: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
         gap="4"
       >
         {proData.map((data) => (
@@ -42,7 +42,7 @@ const ProjectCard = () => {
             <GridItem
               bg="rgba(255,225,253, 0.8)"
               _dark={{ bg: "rgba(7,7,8, 0.8)" }}
-              width="full"
+              width="100%"
               borderRadius="5px"
               value={data.title}
               // h={display ? "auto" : "500px"}

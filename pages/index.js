@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,7 +15,10 @@ export default function Home() {
         textAlign="center"
       >
         <Heading mt="8rem" as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
-          Mitesh Virash
+          <Text as="span" color={useColorModeValue("purple", "purple.700")}>
+            Mitesh
+          </Text>
+          Virash
         </Heading>
         <Text p="2">You are worth more than second thoughts and maybes</Text>
       </Flex>

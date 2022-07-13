@@ -1,5 +1,6 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Scrollbar from "react-scrollbars-custom";
 import ProjectCard from "./proCard";
 
 const MotionBox = motion(Box);
@@ -18,24 +19,27 @@ const Projectpg = () => {
         animate="enter"
         transition={{ duration: 0.5, type: "just" }}
         textAlign={"center"}
-        w="full"
-        mt={{ base: "5rem", md: "5rem" }}
-        ml={{ base: "0", md: "3" }}
-        mb="5"
+        w="100%"
+        h="100%"
+        css={{
+          backdropFilter: "blur(15px)",
+        }}
+        px="3rem"
+        py="3.6rem"
         overflow="auto"
       >
-        <Heading mb="5">Projects</Heading>
-        <Container
-          display={"flex"}
-          flexDir={{ base: "column", md: "column", lg: "row" }}
-          maxW="container.xl"
-          maxH="container.xl"
-          alignItems="center"
-          p={5}
-          justifyContent="center"
-        >
-          <ProjectCard />
-        </Container>
+        <Scrollbar style={{ width: "100%", height: "100%" }}>
+          <Heading mb="5">Projects</Heading>
+          <Flex
+            display={"flex"}
+            flexDir={{ base: "column", md: "column", lg: "row" }}
+            alignItems="center"
+            px="10rem"
+            justifyContent="center"
+          >
+            <ProjectCard />
+          </Flex>
+        </Scrollbar>
       </MotionBox>
     </>
   );

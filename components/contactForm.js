@@ -24,11 +24,9 @@ const ContactForm = () => {
       <FormControl>
         <Stack direction={"column"} spacing="5">
           <Box>
-            <FormLabel htmlFor="name">Name</FormLabel>
             <Input variant="flushed" id="name" placeholder="Name" />
           </Box>
           <Box>
-            <FormLabel htmlFor="email">Email</FormLabel>
             <Input
               variant="flushed"
               id="email"
@@ -37,7 +35,6 @@ const ContactForm = () => {
             />
           </Box>
           <Box>
-            <FormLabel>Your Message</FormLabel>
             <Textarea variant="flushed" placeholder="Your Message" />
           </Box>
           <Button variant="ghost">Submit</Button>

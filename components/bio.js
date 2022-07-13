@@ -1,7 +1,7 @@
 import {
   Text,
   Box,
-  chakra,
+  Flex,
   Avatar,
   Heading,
   Divider,
@@ -15,10 +15,12 @@ import "../public/images/merz.jpg";
 
 const Bio = () => {
   return (
-    <Box
+    <Flex
       p="2"
+      w="100%"
+      flexDir="column"
       bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
-      borderRadius="5px"
+      // borderRadius="5px"
     >
       <Heading textAlign="left" p="4" fontSize="lg">
         Personal Details
@@ -52,7 +54,7 @@ const Bio = () => {
           </Text>
         </Box>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 
