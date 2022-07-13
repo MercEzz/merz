@@ -3,16 +3,16 @@ const mongoose = require("mongoose");
 const FormSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "Please enter your name"],
+    required: true,
   },
   email: {
     type: String,
-    requried: [true, "Please enter your email id"],
+    requried: true,
   },
   message: {
     type: String,
-    required: [true, "msg cannot be empty"],
+    required: true,
   },
 });
 
-module.exports = mongoose.model("form", FormSchema);
+module.exports = mongoose.models.Form || mongoose.model("Form", FormSchema);
