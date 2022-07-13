@@ -21,7 +21,7 @@ const MotionBox = motion(Box);
 
 const ContactPg = () => {
   const variants = {
-    hidden: { opacity: 0, x: 50, y: 0 },
+    hidden: { opacity: 0, x: 100, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },
   };
 
@@ -30,16 +30,25 @@ const ContactPg = () => {
       w="100%"
       h="100%"
       variants={variants}
+      transition={{ duration: 0.7, type: "just" }}
       initial="hidden"
       animate="enter"
       alignItems="center"
-      py="4rem"
+      css={{
+        backdropFilter: "blur(15px)",
+      }}
+      px="3rem"
+      py="5rem"
       overflow="auto"
     >
       <Heading textAlign="center" mb="2rem">
         Contact
       </Heading>
-      <Flex justify="center" align="center" w="100%" p="2" h="100%">
+      <Flex
+        justify="center"
+        flexDir={{ base: "column-reverse", md: "row" }}
+        px={{ base: "0", md: "10rem" }}
+      >
         <ContactForm />
         <ContactDetails />
       </Flex>

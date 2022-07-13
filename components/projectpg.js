@@ -17,8 +17,7 @@ const Projectpg = () => {
         variants={variants}
         initial="hidden"
         animate="enter"
-        transition={{ duration: 0.5, type: "just" }}
-        textAlign={"center"}
+        transition={{ duration: 0.7, type: "just" }}
         w="100%"
         h="100%"
         css={{

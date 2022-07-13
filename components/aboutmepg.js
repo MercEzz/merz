@@ -17,7 +17,7 @@ const AboutMe = () => {
       w="100%"
       h="100%"
       px="3rem"
-      py="3.6rem"
+      py="5rem"
       overflow="auto"
       css={{
         backdropFilter: "blur(15px)",
