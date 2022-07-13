@@ -20,6 +20,7 @@ const LeftSideBar = () => {
       }}
       fontSize="lg"
       zIndex="10"
+      _hover={{ color: "purple.300" }}
     >
       <NextLink href="/projects">PROJECTS</NextLink>
     </Box>

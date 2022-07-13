@@ -20,6 +20,7 @@ const RightSideBar = () => {
       }}
       fontSize="xl"
       zIndex="10"
+      _hover={{ color: "purple.300" }}
     >
       <NextLink href="/contact">CONTACT</NextLink>
     </Box>

@@ -7,11 +7,8 @@ import {
   Divider,
   useColorModeValue,
 } from "@chakra-ui/react";
-// import { motion } from "framer-motion";
-// import Image from "next/image";
-import "../public/images/merz.jpg";
 
-// const MotionBox = motion(Box);
+import "../public/images/merz.jpg";
 
 const Bio = () => {
   return (

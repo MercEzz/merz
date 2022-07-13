@@ -19,8 +19,6 @@ import ToggleTheme from "./toggle-icon";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import { HamburgerIcon } from "@chakra-ui/icons";
-
 const Header = () => {
   return (
     <>
@@ -70,11 +68,7 @@ const Header = () => {
             </Menu>
           </Box>
           <Spacer />
-          <Box
-            p={2}
-            fontSize="3xl"
-            whileHover={{ transform: "translateY(-3px)" }}
-          >
+          <Box p={2} fontSize="3xl" _hover={{ transform: "translateY(-3px)" }}>
             <NextLink href="/">MerZ</NextLink>
           </Box>
         </Box>
@@ -82,6 +76,7 @@ const Header = () => {
           display={{ base: "none", md: "flex" }}
           p="2"
           fontWeight="extrabold"
+          _hover={{ color: "purple.300" }}
         >
           <NextLink href="/about">ABOUT</NextLink>
         </Flex>
@@ -90,6 +85,7 @@ const Header = () => {
           display={{ base: "none", md: "flex" }}
           p="2"
           fontWeight="extrabold"
+          _hover={{ color: "purple.300" }}
         >
           <NextLink href="/">HOME</NextLink>
         </Flex>
