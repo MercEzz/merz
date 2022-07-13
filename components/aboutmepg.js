@@ -30,9 +30,10 @@ const AboutMe = () => {
           initial="hidden"
           animate="enter"
           transition={{ duration: 0.5, type: "just" }}
-          textAlign={"center"}
         >
-          <Heading mb="5">About Me</Heading>
+          <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
+            About Me
+          </Heading>
           <Flex
             display={"flex"}
             flexDir="column"

@@ -41,7 +41,7 @@ const ContactPg = () => {
       py="5rem"
       overflow="auto"
     >
-      <Heading textAlign="center" mb="2rem">
+      <Heading textAlign={{ base: "left", md: "center" }} mb="2rem">
         Contact
       </Heading>
       <Flex
