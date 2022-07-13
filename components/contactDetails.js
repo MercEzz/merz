@@ -16,7 +16,7 @@ const ContactDetails = () => {
   return (
     <Flex
       p="5"
-      bg={useColorModeValue("rgba(255,225,253, 0.8)", "rgba(7,7,8, 0.8)")}
+      bg={useColorModeValue("rgba(255,225,253, 0.9)", "rgba(7,7,8, 0.8)")}
       borderRadius="5px"
       flexDir="column"
       w="100%"
