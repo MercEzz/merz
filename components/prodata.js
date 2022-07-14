@@ -10,7 +10,7 @@ const proData = [
     img: "/images/merze.png",
     title: "MERZ - portfolio",
     sub_title: "Next.js + Framer-motion",
-    desc: "Created a portfolio website with Next.js anddesigned it with Chakra-UI and implementedAnimations with Framer-Motion.This project was build to practice react-router-dom",
+    desc: "Created a portfolio website with Next.js anddesigned it with Chakra-UI and implementedAnimations with Framer-Motion.",
     ghlink: "https://github.com/MercEzz/merz",
   },
   {

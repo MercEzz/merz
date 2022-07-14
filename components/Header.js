@@ -68,7 +68,7 @@ const Header = () => {
             </Menu>
           </Box>
           <Spacer />
-          <Box p={2} fontSize="3xl" _hover={{ transform: "translateY(-3px)" }}>
+          <Box p={2} fontSize="3xl">
             <NextLink href="/">MerZ</NextLink>
           </Box>
         </Box>

@@ -1,7 +1,12 @@
-import { Flex, Heading, Modal, useDisclosure } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Scrollbar from "react-scrollbars-custom";
-import ProjectCard from "./proCard";
+
+import ProAuth from "./proauth";
+
+import ProFoa from "./profoa";
+import ProMerz from "./promerz";
+import ProTuf from "./protuf";
 
 const MotionBox = motion(Flex);
 
@@ -11,8 +16,6 @@ const variants = {
 };
 
 const Projectpg = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <Flex
       w="100%"
@@ -32,7 +35,7 @@ const Projectpg = () => {
           initial="hidden"
           animate="enter"
           transition={{ duration: 0.5, type: "just" }}
-          px={{ base: "0", md: "10rem" }}
+          px={{ base: "0", md: "15rem" }}
         >
           <Heading
             textAlign={{ base: "left", md: "center" }}
@@ -42,13 +45,15 @@ const Projectpg = () => {
             Projects
           </Heading>
           <Flex
-            flexDir={{ base: "column", md: "column", lg: "row" }}
+            flexDir={{ base: "column", lg: "column" }}
             w="100%"
-            h="100%"
             p={5}
             justifyContent="center"
           >
-            <ProjectCard />
+            <ProFoa />
+            <ProMerz />
+            <ProTuf />
+            <ProAuth />
           </Flex>
         </MotionBox>
       </Scrollbar>
