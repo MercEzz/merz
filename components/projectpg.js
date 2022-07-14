@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Modal, useDisclosure } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Scrollbar from "react-scrollbars-custom";
 import ProjectCard from "./proCard";
@@ -11,6 +11,8 @@ const variants = {
 };
 
 const Projectpg = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex
       w="100%"

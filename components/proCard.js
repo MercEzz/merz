@@ -1,12 +1,4 @@
-import {
-  Box,
-  Text,
-  useColorModeValue,
-  Image,
-  Grid,
-  GridItem,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Text, Image, Grid, GridItem, Flex } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 import proData from "./prodata";
@@ -24,15 +16,17 @@ const ProjectCard = () => {
         {proData.map((data) => (
           <MotionBox
             key={data.title}
-            whileHover={{ scale: 0.9 }}
+            // whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3, type: "easeIn" }}
+            cursor="pointer"
+            whileTap={{ scale: 0.9 }}
           >
             <GridItem
               bg="rgba(255,225,253, 0.4)"
               _dark={{ bg: "rgba(7,7,8, 0.8)" }}
               width="100%"
               value={data.title}
-              p="6"
+              p="4"
             >
               <Image src={data.img} alt={data.title} />
               <Flex w="100%">
