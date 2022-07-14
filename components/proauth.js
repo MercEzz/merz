@@ -56,7 +56,7 @@ const ProAuth = () => {
               </Flex>
               <Flex px="2">
                 <Link href={ghlink} isExternal>
-                  {ghlink}
+                  @Github
                 </Link>
               </Flex>
             </Flex>
