@@ -32,7 +32,7 @@ const ContactPg = () => {
       px={{ base: "1rem", md: "3rem" }}
       pt={{ base: "5rem", md: "3rem" }}
       pb={{ base: "2rem", md: "2rem" }}
-      overflow="auto"
+      overflow="hidden"
       css={{
         backdropFilter: "blur(15px)",
       }}
