@@ -7,8 +7,21 @@ import Skills from "./skills";
 const MotionBox = motion(Flex);
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: -50 },
-  enter: { opacity: 1, x: 0, y: 0 },
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -50 },
+};
+
+const hdvariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -50 },
 };
 
 const AboutMe = () => {
@@ -26,20 +39,29 @@ const AboutMe = () => {
     >
       <Scrollbar style={{ width: "100%", height: "100%" }}>
         <MotionBox
-          flexDir="column"
-          variants={variants}
+          w="100%"
+          justify="center"
+          variants={hdvariants}
           initial="hidden"
           animate="enter"
-          transition={{ duration: 0.5, type: "just" }}
-          px={{ base: "0", md: "10rem" }}
+          transition={{ duration: 1, type: "just" }}
         >
           <Heading
             textAlign={{ base: "left", md: "center" }}
             mt="1rem"
             mb="2rem"
           >
-            About Me
+            Projects
           </Heading>
+        </MotionBox>
+        <MotionBox
+          flexDir="column"
+          variants={variants}
+          initial="hidden"
+          animate="enter"
+          transition={{ duration: 1, type: "just" }}
+          px={{ base: "0", md: "10rem" }}
+        >
           <Flex
             display={"flex"}
             flexDir="column"

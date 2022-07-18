@@ -11,8 +11,21 @@ import ProTuf from "./protuf";
 const MotionBox = motion(Flex);
 
 const variants = {
-  hidden: { opacity: 0, x: -200, y: 0 },
-  enter: { opacity: 1, x: 0 },
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -50 },
+};
+
+const hdvariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -50 },
 };
 
 const Projectpg = () => {
@@ -26,16 +39,16 @@ const Projectpg = () => {
       px={{ base: "1rem", md: "3rem" }}
       pt={{ base: "5rem", md: "3rem" }}
       pb={{ base: "2rem", md: "2rem" }}
-      overflow="auto"
+      overflow="hidden"
     >
       <Scrollbar style={{ width: "100%", height: "100%" }}>
         <MotionBox
-          flexDir="column"
-          variants={variants}
+          w="100%"
+          justify="center"
+          variants={hdvariants}
           initial="hidden"
           animate="enter"
           transition={{ duration: 0.5, type: "just" }}
-          px={{ base: "0", md: "15rem" }}
         >
           <Heading
             textAlign={{ base: "left", md: "center" }}
@@ -44,6 +57,16 @@ const Projectpg = () => {
           >
             Projects
           </Heading>
+        </MotionBox>
+        <MotionBox
+          flexDir="column"
+          variants={variants}
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          transition={{ duration: 1, type: "just" }}
+          px={{ base: "0", md: "15rem" }}
+        >
           <Flex
             flexDir={{ base: "column", lg: "column" }}
             w="100%"
