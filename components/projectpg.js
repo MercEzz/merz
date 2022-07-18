@@ -13,7 +13,7 @@ const MotionBox = motion(Flex);
 const variants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 400,
   },
   enter: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -50 },
