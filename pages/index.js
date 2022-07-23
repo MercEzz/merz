@@ -23,8 +23,13 @@ export default function Home() {
       </Head>
       <Flex
         h="100%"
+        w="100%"
         flexDir="column"
         align="center"
+        bgImage={useColorModeValue("/images/lightwall.jpg", "/images/wall.jpg")}
+        bgPos="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
         justify="center"
         textAlign="center"
       >

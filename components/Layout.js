@@ -9,10 +9,10 @@ const Layout = ({ children }) => {
         direction="column"
         h="100vh"
         w="100%"
-        bgImage={useColorModeValue("/images/lightwall.jpg", "/images/wall.jpg")}
-        bgPos="center"
-        bgRepeat="no-repeat"
-        bgSize="cover"
+        // bgImage={useColorModeValue("/images/lightwall.jpg", "/images/wall.jpg")}
+        // bgPos="center"
+        // bgRepeat="no-repeat"
+        // bgSize="cover"
         alignItems="center"
         alignContent="center"
         color={useColorModeValue("black", "white")}
