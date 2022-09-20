@@ -39,7 +39,7 @@ export default function Home() {
           fontSize={{ base: "4xl", md: "6xl" }}
           variants={variants}
           initial="hidden"
-          transition={{ delay: 0.7, duration: 1, type: "just" }}
+          transition={{ duration: 1, type: "just" }}
           animate="enter"
         >
           <Text as="span" color={useColorModeValue("purple", "purple.700")}>
@@ -51,7 +51,7 @@ export default function Home() {
           p="2"
           variants={txtvariants}
           initial="hidden"
-          transition={{ delay: 0.7, duration: 1, type: "just" }}
+          transition={{ duration: 1, type: "just" }}
           animate="enter"
         >
           You are worth more than second thoughts and maybes
